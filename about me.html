@@ -1,0 +1,365 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>About Me</title>
+
+<link href="bootstrap-5.3.8-dist/css/bootstrap.min.css" rel="stylesheet">
+
+<style>
+
+html{
+scroll-behavior:smooth;
+}
+
+body{
+margin:0;
+font-family:Arial,sans-serif;
+background:#f5f5dc;
+color:#5c4033;
+padding-top:150px;
+}
+
+header{
+background:#d2b48c;
+padding:20px;
+position:fixed;
+top:0;
+left:0;
+width:100%;
+z-index:1000;
+}
+
+header table{
+width:100%;
+}
+
+.logo{
+font-size:24px;
+font-weight:bold;
+color:#5c4033;
+}
+
+nav ul{
+list-style:none;
+margin:0;
+padding:0;
+}
+
+nav ul li{
+display:inline;
+margin-right:20px;
+}
+
+nav ul li a{
+text-decoration:none;
+color:#5c4033;
+font-weight:bold;
+}
+
+.sub-menu{
+background:#e6ccb2;
+padding:10px;
+text-align:center;
+position:fixed;
+top:78px;
+left:0;
+width:100%;
+z-index:999;
+}
+
+.sub-menu ul{
+list-style:none;
+margin:0;
+padding:0;
+}
+
+.sub-menu ul li{
+display:inline;
+margin:0 20px;
+}
+
+.sub-menu ul li a{
+text-decoration:none;
+color:#5c4033;
+font-weight:bold;
+}
+
+section{
+padding:80px;
+border-bottom:1px solid #d2b48c;
+}
+
+h1,h2{
+color:#8b5e3c;
+margin-bottom:30px;
+}
+
+.about-table{
+width:100%;
+}
+
+.about-text{
+padding-right:40px;
+text-align:justify;
+}
+
+.about-image img{
+width:400px;
+border-radius:20px;
+}
+
+.calendar{
+margin:auto;
+width:350px;
+background:#e6ccb2;
+padding:20px;
+border-radius:15px;
+}
+
+.calendar table{
+width:100%;
+text-align:center;
+border-collapse:collapse;
+}
+
+.calendar td{
+padding:8px;
+border:1px solid #d2b48c;
+}
+
+.birthday{
+background:#c19a6b;
+color:white;
+font-weight:bold;
+}
+
+.carousel-item img{
+height:420px;
+object-fit:cover;
+border-radius:15px;
+}
+
+.skill-card{
+border:none;
+border-radius:18px;
+overflow:hidden;
+box-shadow:0 5px 15px rgba(0,0,0,0.1);
+transition:0.3s;
+height:100%;
+}
+
+.skill-card:hover{
+transform:translateY(-8px);
+}
+
+.skill-card img{
+height:220px;
+object-fit:cover;
+}
+
+.skill-card .card-body{
+background:#fff8ee;
+}
+
+</style>
+</head>
+
+<body>
+
+<header>
+<table>
+<tr>
+<td class="logo">My Portfolio</td>
+<td align="right">
+<nav>
+<ul>
+<li><a href="index.html">Home</a></li>
+<li><a href="about me.html">AboutMe</a></li>
+<li><a href="contact.html">Contact</a></li>
+</ul>
+</nav>
+</td>
+</tr>
+</table>
+</header>
+
+<div class="sub-menu">
+<ul>
+<li><a href="#Latest">Latest Updates</a></li>
+<li><a href="#Birthday">Birthday</a></li>
+<li><a href="#Educational">Educational Background</a></li>
+<li><a href="#Skills">Skills</a></li>
+</ul>
+</div>
+
+<section id="Latest">
+<table class="about-table">
+<tr>
+<td class="about-text">
+<h1>Who Am I</h1>
+<p>
+I am currently studying at Apayao State College, where I continue to learn and improve myself every day. I am 20 years old and I believe that I have a brave heart that helps me face different challenges in life. Being a student is not always easy, but I do my best to stay strong and positive in every situation. I enjoy discovering new ideas because they help me understand things better and think more creatively. I also like learning new skills that can help me grow both in school and in my personal life. Sometimes I may struggle, but I never give up easily because I know that every experience teaches me something important. I believe that hard work, patience and determination are the keys to success. I always try to improve myself step by step and become a better person each day. I am thankful for the opportunity to study and follow my dreams. With courage and willingness to learn, I know I can achieve my goals in the future.
+</p>
+</td>
+
+<td class="about-image">
+<img src="pic1.jpg" alt="My Photo">
+</td>
+</tr>
+</table>
+</section>
+
+<section id="Birthday">
+<h2>Birthday</h2>
+
+<div class="calendar">
+<h3 align="center">August 2005</h3>
+
+<table>
+<tr>
+<td>Sun</td><td>Mon</td><td>Tue</td><td>Wed</td>
+<td>Thu</td><td>Fri</td><td>Sat</td>
+</tr>
+
+<tr>
+<td></td><td>1</td><td>2</td><td>3</td>
+<td>4</td><td>5</td><td>6</td>
+</tr>
+
+<tr>
+<td>7</td><td>8</td><td>9</td><td>10</td>
+<td>11</td><td>12</td><td>13</td>
+</tr>
+
+<tr>
+<td>14</td><td>15</td><td>16</td><td>17</td>
+<td>18</td><td>19</td><td>20</td>
+</tr>
+
+<tr>
+<td>21</td><td>22</td><td>23</td><td>24</td>
+<td>25</td><td>26</td><td>27</td>
+</tr>
+
+<tr>
+<td>28</td><td class="birthday">29</td><td>30</td><td>31</td>
+<td></td><td></td><td></td>
+</tr>
+
+</table>
+</div>
+</section>
+
+<section id="Educational">
+<h2>Educational Background</h2>
+
+<div id="schoolCarousel" class="carousel slide" data-bs-ride="carousel">
+
+<div class="carousel-indicators">
+<button type="button" data-bs-target="#schoolCarousel" data-bs-slide-to="0" class="active"></button>
+<button type="button" data-bs-target="#schoolCarousel" data-bs-slide-to="1"></button>
+<button type="button" data-bs-target="#schoolCarousel" data-bs-slide-to="2"></button>
+</div>
+
+<div class="carousel-inner">
+
+<div class="carousel-item active">
+<a href="Elementary.html">
+<img src="Central.jpg" class="d-block w-100" alt="">
+</a>
+<div class="carousel-caption bg-dark bg-opacity-50 rounded p-2">
+<h5>Elementary School</h5>
+<p>Luna Central School</p>
+</div>
+</div>
+
+<div class="carousel-item">
+<a href="HighSchool.html">
+<img src="sec.jpg" class="d-block w-100" alt="">
+</a>
+<div class="carousel-caption bg-dark bg-opacity-50 rounded p-2">
+<h5>High School</h5>
+<p>Luna National High School</p>
+</div>
+</div>
+
+<div class="carousel-item">
+<a href="College.html">
+<img src="ASC.jpg" class="d-block w-100" alt="">
+</a>
+<div class="carousel-caption bg-dark bg-opacity-50 rounded p-2">
+<h5>College</h5>
+<p>Apayao State College</p>
+</div>
+</div>
+
+</div>
+
+<button class="carousel-control-prev" type="button" data-bs-target="#schoolCarousel" data-bs-slide="prev">
+<span class="carousel-control-prev-icon"></span>
+</button>
+
+<button class="carousel-control-next" type="button" data-bs-target="#schoolCarousel" data-bs-slide="next">
+<span class="carousel-control-next-icon"></span>
+</button>
+
+</div>
+</section>
+
+<section id="Skills">
+<h2>Skills</h2>
+
+<div class="container">
+<div class="row g-4">
+
+<div class="col-md-6 col-lg-3">
+<div class="card skill-card">
+<img src="skill1.jpg" class="card-img-top">
+<div class="card-body text-center">
+<h5>Basic Cooking</h5>
+<p>I can prepare simple meals and follow basic recipes while keeping the kitchen clean and organized.</p>
+</div>
+</div>
+</div>
+
+<div class="col-md-6 col-lg-3">
+<div class="card skill-card">
+<img src="skill2.jpg" class="card-img-top">
+<div class="card-body text-center">
+<h5>Basic Home Repairs</h5>
+<p>I can handle minor household fixes such as changing bulbs, tightening screws, and simple maintenance tasks.</p>
+</div>
+</div>
+</div>
+
+<div class="col-md-6 col-lg-3">
+<div class="card skill-card">
+<img src="skill3.jpg" class="card-img-top">
+<div class="card-body text-center">
+<h5>Driving and Navigation</h5>
+<p>I know how to drive responsibly and use maps or navigation apps to reach destinations safely.</p>
+</div>
+</div>
+</div>
+
+<div class="col-md-6 col-lg-3">
+<div class="card skill-card">
+<img src="skill4.jpg" class="card-img-top">
+<div class="card-body text-center">
+<h5>Self-defense</h5>
+<p>I have basic knowledge of self-defense techniques to protect myself and stay aware in different situations.</p>
+</div>
+</div>
+</div>
+
+</div>
+</div>
+
+</section>
+
+<script src="bootstrap-5.3.8-dist/js/bootstrap.bundle.min.js"></script>
+
+</body>
+</html>

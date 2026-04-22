@@ -1,0 +1,263 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Contact Form</title>
+
+<link href="bootstrap-5.3.8-dist/css/bootstrap.min.css" rel="stylesheet">
+<link rel="stylesheet" href="bootstrap-5.3.8-dist/js/bootstrap.min.css">
+
+<style>
+body{
+    background:#f8f1e7;
+    font-family:Arial, sans-serif;
+    margin:0;
+    padding:0;
+}
+
+nav{
+    background:#e6d5b8;
+    padding:15px;
+    text-align:center;
+    box-shadow:0 2px 8px rgba(0,0,0,0.08);
+}
+
+nav a{
+    color:#5a4632;
+    text-decoration:none;
+    font-weight:bold;
+    margin:0 15px;
+    padding:8px 15px;
+    border-radius:6px;
+    transition:0.3s;
+}
+
+nav a:hover{
+    background:#d8c3a5;
+    color:#000;
+}
+
+.form-box{
+    max-width:850px;
+    margin:auto;
+    background:#fffaf3;
+    padding:40px;
+    border-radius:15px;
+    box-shadow:0 0 20px rgba(0,0,0,0.08);
+}
+
+h1{
+    text-align:center;
+    font-size:45px;
+    font-weight:900;
+    color:#5a4632;
+    margin-bottom:30px;
+}
+
+label{
+    font-weight:600;
+    color:#5a4632;
+}
+
+.input-group-text{
+    width:45px;
+    justify-content:center;
+    background:#e6d5b8;
+    border:none;
+    color:#5a4632;
+}
+
+.form-control,
+.form-select{
+    border:1px solid #d9c6aa;
+    background:#fffdf9;
+}
+
+.form-control:focus,
+.form-select:focus{
+    box-shadow:none;
+    border-color:#c7a97c;
+}
+
+.form-check-label{
+    color:#5a4632;
+}
+
+.btn-send{
+    background:#c7a97c;
+    color:#fff;
+    font-weight:bold;
+    border:none;
+    padding:10px 25px;
+}
+
+.btn-send:hover{
+    background:#b18d5d;
+    color:#fff;
+}
+
+p{
+    text-align:center;
+    color:#7a654e;
+    margin-bottom:30px;
+    font-size:18px;
+}
+
+@media(max-width:768px){
+    nav a{
+        display:block;
+        margin:8px 0;
+    }
+
+    h1{
+        font-size:35px;
+    }
+
+    .form-box{
+        padding:25px;
+    }
+}
+</style>
+</head>
+
+<body>
+
+<nav>
+    <a href="index.html">Home</a>
+    <a href="about me.html">About Me</a>
+    <a href="contact.html">Contact</a>
+</nav>
+
+<div class="container py-5">
+<div class="form-box">
+
+<h1>Contact Form</h1>
+
+
+
+<form>
+
+<div class="row mb-3 align-items-center">
+<label class="col-md-3 text-md-end">First Name</label>
+<div class="col-md-9">
+<div class="input-group">
+<span class="input-group-text"><i class="bi bi-person-fill"></i></span>
+<input type="text" class="form-control" placeholder="First Name" required>
+</div>
+</div>
+</div>
+
+<div class="row mb-3 align-items-center">
+<label class="col-md-3 text-md-end">Last Name</label>
+<div class="col-md-9">
+<div class="input-group">
+<span class="input-group-text"><i class="bi bi-person-fill"></i></span>
+<input type="text" class="form-control" placeholder="Last Name" required>
+</div>
+</div>
+</div>
+
+<div class="row mb-3 align-items-center">
+<label class="col-md-3 text-md-end">E-Mail</label>
+<div class="col-md-9">
+<div class="input-group">
+<span class="input-group-text"><i class="bi bi-envelope-fill"></i></span>
+<input type="email" class="form-control" placeholder="E-Mail Address" required>
+</div>
+</div>
+</div>
+
+<div class="row mb-3 align-items-center">
+<label class="col-md-3 text-md-end">Phone #</label>
+<div class="col-md-9">
+<div class="input-group">
+<span class="input-group-text"><i class="bi bi-telephone-fill"></i></span>
+<input type="text" class="form-control" placeholder="Phone Number">
+</div>
+</div>
+</div>
+
+<div class="row mb-3 align-items-center">
+<label class="col-md-3 text-md-end">Address</label>
+<div class="col-md-9">
+<div class="input-group">
+<span class="input-group-text"><i class="bi bi-house-fill"></i></span>
+<input type="text" class="form-control" placeholder="Address">
+</div>
+</div>
+</div>
+
+<div class="row mb-3 align-items-center">
+<label class="col-md-3 text-md-end">City</label>
+<div class="col-md-9">
+<div class="input-group">
+<span class="input-group-text"><i class="bi bi-building"></i></span>
+<input type="text" class="form-control" placeholder="City">
+</div>
+</div>
+</div>
+
+
+<div class="row mb-3 align-items-center">
+<label class="col-md-3 text-md-end">Zip Code</label>
+<div class="col-md-9">
+<div class="input-group">
+<span class="input-group-text"><i class="bi bi-mailbox"></i></span>
+<input type="text" class="form-control" placeholder="Zip Code">
+</div>
+</div>
+</div>
+
+<div class="row mb-3 align-items-center">
+<label class="col-md-3 text-md-end">Website</label>
+<div class="col-md-9">
+<div class="input-group">
+<span class="input-group-text"><i class="bi bi-globe"></i></span>
+<input type="text" class="form-control" placeholder="Website or Domain Name">
+</div>
+</div>
+</div>
+
+<div class="row mb-3">
+<label class="col-md-3 text-md-end">Hosting?</label>
+<div class="col-md-9">
+<div class="form-check">
+<input class="form-check-input" type="radio" name="hosting">
+<label class="form-check-label">Yes</label>
+</div>
+
+<div class="form-check">
+<input class="form-check-input" type="radio" name="hosting">
+<label class="form-check-label">No</label>
+</div>
+</div>
+</div>
+
+<div class="row mb-4">
+<label class="col-md-3 text-md-end">Project Description</label>
+<div class="col-md-9">
+<div class="input-group">
+<span class="input-group-text"><i class="bi bi-pencil-fill"></i></span>
+<textarea class="form-control" rows="3" placeholder="Project Description"></textarea>
+</div>
+</div>
+</div>
+
+<div class="row">
+<div class="offset-md-3 col-md-9">
+<button type="submit" class="btn btn-send">
+Send <i class="bi bi-send-fill"></i>
+</button>
+</div>
+</div>
+
+</form>
+
+</div>
+</div>
+
+<script src="bootstrap-5.3.8-dist/js/bootstrap.bundle.min.js"></script>
+
+</body>
+</html>
